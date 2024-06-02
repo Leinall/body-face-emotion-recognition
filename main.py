@@ -487,7 +487,7 @@ def parse_opts():
 args = parse_opts()
 b = EmotionRecognitionSystem(args)
 b.eval()
-input = torch.randn(1, 3, 224, 224)
+input = torch.randn(12,134)
 torch.onnx.export(model,             # PyTorch model to export
                   input,       # input tensor
                   "model.onnx",     # Path to save the exported ONNX model
