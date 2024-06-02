@@ -493,5 +493,6 @@ torch.onnx.export(model,             # PyTorch model to export
                   "model.onnx",     # Path to save the exported ONNX model
                   verbose=True      # Print out information during export
                   )
+torch.save(model, "model.onnx")
 
 print("Model exported successfully to 'model.onnx'")
